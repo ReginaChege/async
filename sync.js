@@ -1,13 +1,12 @@
 // Write an asynchronous function that accepts a message string and 
 // a delay time in milliseconds. The function should log the message 
 // to the console after the specified delay time.
-async function acceptsMessage(messa,delay){
-await new Promise(resolve=>setTimeout(resolve,delay),5000);
-    console.log(messa)
-}
-console.log("I am a girl")
-
-
+let accepts = () =>{
+    console.log("I am a girl")
+    
+};
+accepts();
+setTimeout(accepts,7000);
 // // You have an array of user IDs and a function getUserData(id)
 // //  that returns a Promise with user data when given a user ID. 
 // //  Write an asynchronous function that fetches and logs the data
